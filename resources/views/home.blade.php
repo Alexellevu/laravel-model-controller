@@ -14,5 +14,6 @@
     
     <body>
             <h1>prova controller</h1>
+            <p>Lorem ipsum dolor</p>
     </body>
 </html>
