@@ -13,7 +13,17 @@
     </head>
     
     <body>
-            <h1>prova controller</h1>
-            <p>Lorem ipsum dolor</p>
+           <h1>Archivio film</h1>
+
+            @foreach($movies as $movie)
+
+                <div class="card">
+                        <h3>{{$movie->title}}</h3>
+                        <h5>Original title: {{$movie->original_title}}</h5>
+                        <p>Nationality: {{$movie->nationality}}</p>
+                        <span>Release Date: {{$movie->date}} - </span>
+                        <span> Vote: {{$movie->vote}}</span>
+                </div>
+            @endforeach
     </body>
 </html>
