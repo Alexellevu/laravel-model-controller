@@ -27,5 +27,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexellevu/laravel-model-controller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alexellevu/laravel-model-controller/issues"
+  },
+  "homepage": "https://github.com/Alexellevu/laravel-model-controller#readme"
 }

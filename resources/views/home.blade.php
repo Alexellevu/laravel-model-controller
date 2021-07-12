@@ -9,21 +9,53 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <style>
+            
+            body{
+                background-color: cyan;
+                font-family:sans-serif;
+            }
+            .card{
+                background-color: green;
+                color: white;
+                border-radius: 5px;
+                width: 200px;
+                margin: 5px 10px;
+                padding: 5px 12px;
+                border: 2px solid black;
+            }
+
+            .movies{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                margin: auto;
+            }
+
+            h1{
+                text-align: center;
+                font-size:70px;
+                color: green;
+            }
+        </style>
         
     </head>
     
     <body>
-           <h1>Archivio film</h1>
-
+           <h1>Movies Archive</h1>
+            <div class="movies">
             @foreach($movies as $movie)
-
+           
                 <div class="card">
-                        <h3>{{$movie->title}}</h3>
-                        <h5>Original title: {{$movie->original_title}}</h5>
+                        <h2>{{$movie->title}}</h2>
+                        <h4>Original title: {{$movie->original_title}}</h4>
                         <p>Nationality: {{$movie->nationality}}</p>
-                        <span>Release Date: {{$movie->date}} - </span>
-                        <span> Vote: {{$movie->vote}}</span>
+                        <p>Release Date: {{$movie->date}} </p>
+                        <p> Vote: {{$movie->vote}}</p>
                 </div>
             @endforeach
+            </div>
     </body>
 </html>
