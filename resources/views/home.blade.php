@@ -25,6 +25,11 @@
                 border: 2px solid black;
             }
 
+            .card:hover{
+                background-color: black;
+                cursor: pointer;
+            }
+
             .movies{
                 display: flex;
                 flex-direction: row;
@@ -37,7 +42,7 @@
             h1{
                 text-align: center;
                 font-size:70px;
-                color: green;
+                color: green
             }
         </style>
         
